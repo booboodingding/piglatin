@@ -19,8 +19,9 @@ def select_word():
 	print "Enter a word or sentence to be converted to pig-Latin: "
 	sentence = raw_input()
 	pig_sentence = []
+	# This splits the sentence into it's individual words
 	for i in sentence.split():
-	    #pig_latin(i)
+	    # Function call swaps the letters around
 	    pig_sentence.append(pig_latin(i))
 
 	pigFin = ' '.join(pig_sentence)
